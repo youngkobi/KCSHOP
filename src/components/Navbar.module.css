@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  color: var(--color-text);
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.links a {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--color-text);
+}
+
+.count {
+  background: var(--color-accent);
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 4px;
+}

@@ -1,0 +1,49 @@
+/* 📦 Fixed position so it floats over everything else */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 999;
+  /* 🎬 Fade + slide up animation when it appears */
+  animation: slideUp 0.3s ease;
+}
+
+/* 💬 The message text */
+.message {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ✕ Close button — subtle and small */
+.close {
+  background: none;
+  border: none;
+  color: var(--color-bg);
+  cursor: pointer;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+/* 🎬 Keyframe — toast slides up from below and fades in */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
